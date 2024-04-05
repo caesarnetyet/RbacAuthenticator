@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rbac.data.datasources"
+    namespace = "com.rbac.app.ui"
     compileSdk = 34
 
     defaultConfig {
@@ -36,9 +36,7 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-
     implementation(libs.material)
-    implementation(project(":data:models"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

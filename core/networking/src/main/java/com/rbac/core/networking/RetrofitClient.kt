@@ -12,7 +12,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 class RetrofitClient(private val sharedPreferencesService: ISharedPreferencesService) {
-    private val baseURL = "http://localhost:8000/api/"
+    private val baseURL = "http://10.0.2.2:8000/api/"
 
     private val authInterceptor = Interceptor { chain ->
         val token = sharedPreferencesService.getString("token") ?: ""
